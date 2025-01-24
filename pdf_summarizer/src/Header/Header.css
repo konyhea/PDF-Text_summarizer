@@ -1,0 +1,93 @@
+/* ------- STYLING THE HEADER CONTAINER ------ */
+
+.header {
+    width: 100%;
+}
+
+.header-container {
+    background: rgb(252 252 253);
+    border-block-end: 1px solid rgb(224 225 230); /* Logical property */
+    padding-block-start: 20px; /* Logical property for padding-top */
+    padding-block-end: 20px; /* Logical property for padding-bottom */
+    padding-inline: 24px; /* Logical property for left/right padding */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.svg-visible {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.inner-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.audio {
+    color: rgb(255 255 255);
+    background: rgb(30 31 36);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.audio p {
+    font-size: .9rem;
+}
+
+.svg-hidden {
+    margin-inline-start: auto;
+}
+
+
+
+.svg-flag {
+    width: 20px;
+    height: 20px;
+}
+.loadingIcon {
+    margin-inline-start: auto; /* Logical property for margin-left */
+ }
+
+ .svg {
+    cursor: pointer;
+ }
+
+ .element {
+    /* Normal state styles */
+    padding: 10px;
+    border-radius: 8px; /* Optional: apply radius by default */
+    background-color: transparent; /* Default background */
+    transition: background-color 0.3s, border-radius 0.3s; /* Smooth transition */
+}
+
+.element:hover {
+    /* Hover state styles */
+    
+    background-color: rgba(0, 0, 0, 0.1); /* Change to desired background color */
+    border-radius: 12px; /* You can increase or adjust the radius on hover */
+}
+
+/* Media Query */
+@media screen and (min-width: 1280px) {
+    .loadingIcon {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .svg-hidden-inner {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
