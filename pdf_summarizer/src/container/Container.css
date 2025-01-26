@@ -1,0 +1,70 @@
+.body-container {
+    padding-inline: 20px; /* Replaces padding-left and padding-right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading img {
+    margin-inline: auto; /* Centers the image horizontally */
+}
+
+.heading h5 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(30, 31, 36);
+    font-weight: 400;
+}
+
+.heading p {
+    color: rgb(98, 99, 108);
+    font-weight: 300;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.btn {
+    padding-block: 10px; /* Replaces padding-top and padding-bottom */
+    padding-inline: 12px; /* Replaces padding-left and padding-right */
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 152px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 31, 36);
+    border-radius: 12px;
+    cursor: pointer; /* Adds hover indication */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background-color: rgb(50, 50, 60); /* Slightly lighter background on hover */
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.textarea-box {
+    width: 60vw;
+    height: 20vh;
+    outline: none;
+    font-size: 0.6rem;
+    padding: 8px; /* Adds inner spacing for better UX */
+    border-radius: 6px; /* Slight rounding for a modern look */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: outline 0.3s ease; /* Smooth outline transition */
+}
+
+.textarea-box:hover {
+    outline: 1px solid green;
+    box-shadow: 0 1px 5px rgba(0, 128, 0, 0.3); /* Subtle glow effect */
+}

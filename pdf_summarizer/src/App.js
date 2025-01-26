@@ -1,11 +1,12 @@
 import './App.css';
 import Header from './Header/Header';
-import Body from './Body/Body';
+import Container from './container/Container';
+
 function App() {
   return (
     <div>
       <Header/>
-      <Body/>
+      <Container/>
     </div>
   );
 }
